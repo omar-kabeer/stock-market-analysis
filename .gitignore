@@ -1,0 +1,58 @@
+# Jupyter Notebook checkpoints  
+.ipynb_checkpoints/
+
+# Virtual environment  
+venv/  
+.env  
+*.venv  
+Pipfile  
+Pipfile.lock  
+
+# Data files and datasets  
+data/  
+*.csv  
+*.tsv  
+*.json  
+*.parquet  
+*.h5  
+*.xlsx  
+*.db  
+*.sqlite  
+
+# Model artifacts  
+models/  
+*.pkl  
+*.joblib  
+*.hdf5  
+*.onnx  
+*.pb  
+
+# Logs and outputs  
+logs/  
+*.log  
+*.out  
+*.err  
+
+# Cache and temporary files  
+__pycache__/  
+*.pyc  
+*.pyo  
+*.pyd  
+.DS_Store  
+Thumbs.db  
+
+# VSCode settings  
+.vscode/  
+
+# Snapshots (for testing)  
+.snapshots/  
+
+# MLFlow & TensorBoard logs  
+mlruns/  
+tensorboard_logs/  
+wandb/  
+
+# Docker & Cloud-specific files  
+*.dockerignore  
+*.cloudignore  
+
