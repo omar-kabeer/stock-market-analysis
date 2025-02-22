@@ -97,6 +97,13 @@ def process_ticker_file(file_path, output_folder):
     output_file = os.path.join(output_folder, f"{ticker_name}_processed.csv")
     df.to_csv(output_file, index=False)
     print(f"Processed data saved to {output_file}.")
+    
+    
+def add_target(df):
+    # Target variable: next day's return
+    df['Target'] = df.groupby('Symbol')['Close'].transform(
+        lambda x: x.pct_change(periods=1).shift(-1))
+    return df
 
 if __name__ == "__main__":
     # Define input and output folders
