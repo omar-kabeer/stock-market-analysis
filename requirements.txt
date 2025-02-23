@@ -11,7 +11,7 @@ matplotlib>=3.7.0
 seaborn>=0.13.0
 plotly>=5.18.0
 bokeh>=3.1.0  # For interactive visualizations
-mplfinance 
+mplfinance>=0.12.0  # Ensure version compatibility
 
 # Statistical analysis
 scipy>=1.11.0
@@ -19,6 +19,11 @@ statsmodels>=0.14.0
 
 # Machine learning (optional, for advanced analysis)
 scikit-learn>=1.3.0
+xgboost>=1.7.0  # For gradient boosting
+
+# Deep learning (optional)
+tensorflow>=2.12.0
+keras>=2.12.0  # High-level neural networks API
 
 # Jupyter Notebook support
 jupyter>=1.0.0
@@ -35,11 +40,12 @@ xlrd>=2.0.0  # For reading older Excel files
 pytest>=7.0.0  # For unit testing
 pytest-cov>=4.0.0  # For test coverage
 
-tensorflow>=2.12.0  # For deep learning
-keras>=2.12.0  # High-level neural networks API
-xgboost>=1.7.0  # For gradient boosting
-
+# Web app framework
 streamlit>=1.29.0
+
+# Technical Analysis
 ta>=0.10.0
+
+# News and Text Processing
 newsapi-python>=0.2.7
 textblob>=0.17.1
